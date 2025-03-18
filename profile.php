@@ -50,7 +50,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->execute();
 
             $_SESSION["username"] = $new_username;
+            $username = $_SESSION["username"];
             $_SESSION["user_email"] = $new_email;
+            $email = $_SESSION["user_email"];
             $message = "Profile updated successfully!";
         }
     }

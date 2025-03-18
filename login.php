@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $db_user, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             // Prepare SQL statement to prevent SQL injection
-            $stmt = $conn->prepare("SELECT id, username, email ,password FROM users WHERE email = :email");
+            $stmt = $conn->prepare("SELECT id, username, email,profile_pic ,password FROM users WHERE email = :email");
             $stmt->bindParam(':email', $email, PDO::PARAM_STR);
             $stmt->execute();
             

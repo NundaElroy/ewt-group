@@ -16,10 +16,10 @@ $user_id = $_SESSION["user_id"];
 $profile_pic = $_SESSION["profile_pic_url"];
 
 
-// Default profile picture if none is found
-if (empty($profile_pic)) {
-    $profile_pic = "default-profile.jpg";
-}
+// // Default profile picture if none is found
+// if (empty($profile_pic)) {
+//     $profile_pic = "default-profile.jpg";
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +59,7 @@ if (empty($profile_pic)) {
             <div class="col-md-6">
                 <div class="card shadow-lg border-0">
                     <div class="card-body text-center p-4">
-                        <img src="<?php echo "uploads\\".htmlspecialchars($profile_pic); ?>" id="profile-pic" alt="Profile Picture" class="rounded-circle mb-3" width="100" height="100">
+                        <img src="<?php echo htmlspecialchars($profile_pic); ?>" id="profile-pic" alt="Profile Picture" class="rounded-circle mb-3" width="100" height="100">
                         
                         <h3 class="text-primary">Welcome, <span id="user-name"><?php echo htmlspecialchars($username); ?></span>!</h3>
                         <p class="text-muted">Email: <span id="user-email"><?php echo htmlspecialchars($email); ?></span></p>

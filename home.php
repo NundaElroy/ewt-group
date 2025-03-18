@@ -16,10 +16,10 @@ $user_id = $_SESSION["user_id"];
 $profile_pic = $_SESSION["profile_pic_url"];
 
 
-// // Default profile picture if none is found
-// if (empty($profile_pic)) {
-//     $profile_pic = "default-profile.jpg";
-// }
+// Default profile picture if none is found
+if (empty($profile_pic)) {
+    $profile_pic = "default-profile.jpg";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

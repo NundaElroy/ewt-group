@@ -17,7 +17,7 @@ $message = "";
 
 // Fetch user data from the database
 try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $db_user, $password);
+    $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $db_user, $db_password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     $stmt = $conn->prepare("SELECT username, email, profile_pic FROM users WHERE id = :user_id");

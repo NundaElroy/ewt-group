@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Please enter your password.";
     } else {
         try {
-            $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $db_user, $password);
+            $conn = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $db_user, $db_password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             // Prepare SQL statement to prevent SQL injection
             $stmt = $conn->prepare("SELECT id, username, email,profile_pic ,password FROM users WHERE email = :email");

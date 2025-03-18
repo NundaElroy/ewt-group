@@ -8,6 +8,6 @@
 $host = "localhost";
 $dbname = "user_management";
 $db_user = "root";  // Change if needed
-$password = "M@yella123";      // Change if needed
+$db_password = "M@yella123";      // Change if needed
 
 ?>

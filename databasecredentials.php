@@ -6,8 +6,8 @@
  * Edit these values to match your database configuration.
  */
 $host = "localhost";
-$dbname = "user_registration";
-$username = "root";  // Change if needed
+$dbname = "user_management";
+$db_user = "root";  // Change if needed
 $password = "M@yella123";      // Change if needed
 
 ?>

@@ -47,7 +47,7 @@ if (empty($profile_pic)) {
         <div class="container">
             <span class="navbar-brand">Home</span>
             <div class="d-flex">
-                <a href="" class="btn btn-outline-light me-2">View Profile</a>
+                <a href="profile.php" class="btn btn-outline-light me-2">View Profile</a>
                 <a href="logout.php" class="btn btn-light text-primary">Logout</a>
             </div>
         </div>

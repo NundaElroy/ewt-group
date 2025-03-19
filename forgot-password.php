@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 
                 require_once("mailer.php");
-                if (send_email($token)) {
+                if (send_email($token,$email)) {
                     header("Location: verify-token.php");
                 } else {
                     $message = "Failed to send email.";
